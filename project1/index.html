@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HostelMate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#expenses">Expenses</a></li>
+      <li><a href="#tenants">Tenants</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard">
+    <h2>Dashboard</h2>
+    <div class="summary">
+      <div>Total Income: <span id="income">0</span></div>
+      <div>Total Expenses: <span id="expenses-summary">0</span></div>
+      <div>Available Rooms: <span id="available-rooms">10</span></div>
+    </div>
+  </section>
+
+  <!-- Expenses Section -->
+  <section id="expenses">
+    <h2>Track Expenses</h2>
+    <form id="expense-form">
+      <input type="text" id="expense-name" placeholder="Expense Name" required>
+      <input type="number" id="expense-amount" placeholder="Amount" required>
+      <button type="submit">Add Expense</button>
+    </form>
+    <ul id="expense-list"></ul>
+  </section>
+
+  <!-- Tenants Section -->
+  <section id="tenants">
+    <h2>Tenant Management</h2>
+    <div id="tenant-list"></div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms">
+    <h2>Room Management</h2>
+    <div id="room-list"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
